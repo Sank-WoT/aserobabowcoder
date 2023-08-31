@@ -1,0 +1,339 @@
+* {
+    font-weight: 300;
+    font-family: Spectral, serif;
+}
+
+.title-projects {
+    text-align: center;
+    font-size: var(--main-size);
+    margin: var(--margin-projects);
+    font-weight: bold;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.information-contnent {
+    font-size: var(--information-size);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+.col1, .col2 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1;
+}
+
+.col2 {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 0px;
+    gap: 30px;
+
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a {
+    color: currentcolor;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.footer-nav {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+.child {
+    width: calc(var(--width-child) - 20px);
+}
+
+.title {
+    text-align: left;
+    margin-left: 0px;
+    font-size: var(--main-size);
+    line-height: var(--main-size);
+    font-weight: 200;
+}
+
+.head, .top {
+    width: 100%;
+    height: auto;
+    margin: var(--margin-main) auto;
+    max-width: 1110px;
+}
+
+.position {
+    font-weight: 300;
+    font-family: Spectral, serif;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.letter {
+    font-size: var(--main-size);
+    line-height: var(--main-size);
+    font-weight: 200;
+    max-width: 900px;
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.copyright {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.slides {
+    margin-bottom: var(--slides-margin);
+    height: var(--height-slide);
+}
+
+.position-italic {
+    font-style: italic;
+}
+
+.logo {
+    width: var(--size-log);
+}
+
+.position-bold {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.swiper-slide {
+    cursor: pointer;
+}
+
+.photo-content {
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    animation: 1s ease 0s 1 normal forwards running show-photo;
+    background-image: url("http://localhost:1337/uploads/Adobe_Stock_190087141_e820cd4e09.jpeg")
+}
+
+@keyframes show-photo {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    } 
+}
+
+.information {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 40px;
+    margin: var(--margin-information) auto;
+    flex-wrap: wrap;
+}
+
+.information-container {
+    width: 100%;
+    height: auto;
+    margin: 0px auto var(--information-margin);
+    max-width: 1110px;
+}
+
+@media screen and (max-width: 300px) {
+    .photo-content {
+        height: 180px;
+    }
+    
+    .copyright {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    :root {
+        --main-size: 32px;
+        --size-log: 48px;
+        --height-slide: calc(width - 20px);
+        --information-size: 24px;
+        --margin-information: 0px;
+        --margin-projects: 0px;
+        --information-margin: 8px;
+    }
+
+    body {
+        margin: 12px;
+    }
+  }
+
+
+@media screen and (min-width: 301px) and (max-width: 576px) {
+    .photo-content {
+        height: 180px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .information {
+        gap: 0;
+    }
+
+    body {
+        margin: 12px 20px;
+    }
+
+    :root {
+        --main-size: 32px;
+        --size-log: 48px;
+        --height-slide: calc(width - 300px);
+        --margin-main: 8px;
+        --margin-information: 0px;
+        --information-size: 18px;
+        --width-child: 100%;
+        --margin-projects: 12px;
+        --information-margin: 16px;
+        --slides-margin: 16px;
+    }
+
+    .information-contnent {
+        margin: 0;
+    }
+  }
+
+@media screen and (min-width: 577px)and (max-width: 768px) {
+    .photo-content {
+        height: 200px;
+    }
+
+    .information {
+        gap: 0;
+    }
+
+    :root {
+        --main-size: 48px;
+        --size-log: 48px;
+        --height-slide: calc(width - 500px);
+        --margin-main: 32px;
+        --margin-information: 48px;
+        --information-size: 18px;
+        --width-child: 100%;
+        --margin-projects: 18px;
+        --information-margin: 32px;
+        --slides-margin: 32px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .photo-content {
+        height: 300px;
+    }
+
+    :root {
+        --main-size: 60px;
+        --size-log: 60px;
+        --height-slide: calc(width - 500px);
+        --margin-main: 60px;
+        --margin-information: 100px;
+        --information-size: 24px;
+        --width-child: 50%;
+        --margin-projects: 24px;
+        --information-margin: 64px;
+        --slides-margin: 64px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .photo-content {
+        height: 450px;
+    }
+
+    :root {
+        --main-size: 82px;
+        --size-log: 60px;
+        --height-slide: calc(width - 500px);
+        --margin-main: 110px;
+        --margin-information: 200px;
+        --information-size: 24px;
+        --width-child: 50%;
+        --margin-projects: 32px;
+        --information-margin: 80px;
+        --slides-margin: 140px;
+    }
+  }
