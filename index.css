@@ -178,7 +178,7 @@ a {
     background-size: cover;
     opacity: 0;
     animation: 1s ease 0s 1 normal forwards running show-photo;
-    background-image: url("http://localhost:1337/uploads/Adobe_Stock_190087141_e820cd4e09.jpeg")
+    background-image: url("./AdobeStock_190087141.jpeg")
 }
 
 @keyframes show-photo {
